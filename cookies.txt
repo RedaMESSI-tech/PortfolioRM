@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.googleadservices.com	TRUE	/pagead/conversion/10974797857/	FALSE	1999999999	Conversion	EgwIABUAAAAAHQAAAAAYASD94aGrkYaWsz9IAWo3RUFJYUlRb2JDaE1Jclk3d3FybXZpd01WQzJaQkFoMUY2elQwRUFRWUJDQUJFZ0lLQWZEX0J3RXCW2Ku0ua-LA5AB08n81NgTmAEA
+googleadservices.com	TRUE	/	FALSE	1999999999	ar_debug	1
+www.googleadservices.com	TRUE	/	FALSE	1999999999	SameSite	none
+.temu.com	TRUE	/	FALSE	1999999999	__cf_bm	l_lSXZELArKew8bQhFkyuEQN40_oWdKmkrAl89Y7fh8-1738858697-1.0.1.1-YwApMUMSG7xKFCqREMFlA3bfIuzcqc_GKKYN008wIfys2qmY2rT.EeElhTO2LvKjnfvNnK1TqHd2hrb918Sslg
+www.temu.com	TRUE	/	FALSE	1999999999	SameSite	None
+

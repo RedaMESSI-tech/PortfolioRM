@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.melaniedev.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Feb 2025 16:19:16 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href='../unpkg.com/boxicons%402.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<title>Portfolio - Reda</title>
+
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="image/logo_RM_final.png" alt="Logo RM" class="nav__logo-img">
+            </a>
+            
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bxs-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="home">
+            <div class="home__overlay"></div> <!-- Effet flou -->
+            
+            <div class="home__content">
+                <h2 class="home__greeting">Hello, je suis</h2>
+                <h1 class="home__title">Reda MESSI</h1>
+                <h3 class="home__subtitle">Développeur Full-Stack</h3>
+                
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/reda-m-061379148/" target="_blank" class="home__social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://www.malt.fr/profile/redamessi" target="_blank" class="home__social-link">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+    
+                <div class="home__buttons">
+                    <a download="" href="cvredamessi.jpg" class="button">Télécharger mon CV</a>
+                    <a href="#about" class="button button--alt">À propos de moi</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about section" id="about">
+            <span class="section__subtitle">Présentation</span>
+            <h2 class="section__title">À propos de moi</h2>
+        
+            <div class="about__container container grid">
+                <img src="image/img__about-3.png" alt="Reda Messi" class="about__img">
+        
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-code-alt about__icon'></i>
+                            <h3 class="about__title">Développeur Full-Stack</h3>
+                            <span class="about__subtitle">Expérience en frontend et backend</span>
+                        </div>
+        
+                        <div class="about__box">
+                            <i class='bx bx-brain about__icon'></i>
+                            <h3 class="about__title">Résolution de problèmes</h3>
+                            <span class="about__subtitle">Approche analytique et logique</span>
+                        </div>
+        
+                        <div class="about__box">
+                            <i class='bx bx-group about__icon'></i>
+                            <h3 class="about__title">Travail en équipe</h3>
+                            <span class="about__subtitle">Collaboration Agile et méthodologie Scrum</span>
+                        </div>
+                    </div>
+        
+                    <p class="about__description">
+                        Développeur Full-Stack passionné avec une expérience en Java, Spring Boot, Vue.js, Node.js et MongoDB J’ai travaillé sur des projets variés incluant des applications de gestion, des microservices et des interfaces modernes.<br><br>
+        
+                        Grâce à mon parcours, j’ai acquis une forte capacité à résoudre des problèmes complexes, à travailler en équipe dans un environnement Agile, et à concevoir des architectures robustes.<br><br>
+        
+                        Toujours en quête d'innovation, je suis curieux des nouvelles technologies et j’aime expérimenter avec l'IA, la blockchain et le développement mobile.<br>
+                    </p>
+        
+                    <a href="#contact" class="button contact_me-button">Contactez-moi</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">Mes compétences</span>
+            <h2 class="section__title">Mes hard skills</h2>
+        
+            <div class="skills__container container grid">
+        
+                <!-- Section Frontend -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Développement Frontend</h3>
+        
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills_data">
+                                <i class='bx bxl-javascript skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bxl-typescript skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">TypeScript</h3>
+                                    <span class="skills__level">Intermédiaire</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bxl-vuejs skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Vue.js</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="skills__group">
+                            <div class="skills_data">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">React.js</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">CSS3 / SCSS</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">HTML5</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Section Backend -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Développement Backend</h3>
+        
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills_data">
+                                <i class='bx bxl-nodejs skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bx-server skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">NestJS</h3>
+                                    <span class="skills__level">Intermédiaire</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bxl-java skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="skills__group">
+                            <div class="skills_data">
+                                <i class='bx bxl-spring-boot skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Spring Boot</h3>
+                                    <span class="skills__level">Intermédiaire</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bx-data skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">SQL (MySQL, PostgreSQL)</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bxl-mongodb skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">MongoDB</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Section DevOps & Cloud -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Cloud & DevOps</h3>
+        
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills_data">
+                                <i class='bx bxl-aws skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">AWS</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bxl-docker skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Docker</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bx-cube skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Kubernetes</h3>
+                                    <span class="skills__level">Les bases</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="skills__group">
+                            <div class="skills_data">
+                                <i class='bx bx-git-branch skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Git & GitHub</h3>
+                                    <span class="skills__level">Avancé</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bx-server skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Terraform</h3>
+                                    <span class="skills__level">Les bases</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bx-terminal skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">CI/CD (Jenkins, ArgoCD)</h3>
+                                    <span class="skills__level">Intermédiaire</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Section Soft Skills -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Soft Skills</h3>
+        
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills_data">
+                                <i class='bx bx-group skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Travail d'équipe</h3>
+                                    <span class="skills__level">Excellente collaboration Agile</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bx-brain skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Résolution de problèmes</h3>
+                                    <span class="skills__level">Approche analytique et logique</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills_data">
+                                <i class='bx bx-time skills__icon'></i>
+                                <div>
+                                    <h3 class="skills__name">Gestion du temps</h3>
+                                    <span class="skills__level">Capacité d'organisation efficace</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        
+        
+
+        <section class="services section">
+            <span class="section__subtitle">Mon expérience</span>
+            <h2 class="section__title">Mon parcours</h2>
+        
+            <div class="services__title2">
+                <h2 class="section__title title2 pro" data-filter=".pro">Pro</h2>
+                <h2 class="section__title title2 active-services" data-filter="all">Tous</h2>
+                <h2 class="section__title title2" data-filter=".formations">Formations</h2>
+            </div>
+        
+            <div class="services__container container grid">
+        
+        <!-- Expérience : Française des Jeux -->
+        <div class="services__card mix pro">
+            <h3 class="services__title">Développeur ERP - Française des Jeux</h3>
+            <span class="services_subbtitle">Mars 2024 - Octobre 2024</span>
+
+            <span class="services__button">
+                Voir plus <i class='bx bx-right-arrow-alt services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Développeur ERP - Française des Jeux</h3>
+                    <p class="services__modal-description">Mars 2024 - Octobre 2024</p>
+
+                    <ul class="services__modal-list">
+                        <li><i class='bx bx-check services__modal-icon'></i> Développement et maintenance d'un  ERP Oracle  utilisé pour la gestion comptable et opérationnelle.</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Optimisation du  code en Jython  pour améliorer les performances des traitements automatisés.</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Rédaction et mise à jour de  documentation technique  et guides utilisateurs.</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Collaboration avec les équipes fonctionnelles et les architectes pour concevoir et tester les nouvelles fonctionnalités.</li>
+                    </ul>
+
+                    <p><b>Stack technique :</b> Jython, Oracle ERP, EPM, SQL, Git, Méthodologie Agile.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Expérience : Kaora Partners -->
+        <div class="services__card mix pro">
+            <h3 class="services__title">Développeur Fullstack - Kaora Partners</h3>
+            <span class="services_subbtitle">2021 - 2024</span>
+
+            <span class="services__button">
+                Voir plus <i class='bx bx-right-arrow-alt services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Développeur Fullstack - Kaora Partners</h3>
+                    <p class="services__modal-description">2021 - 2024</p>
+
+                    <ul class="services__modal-list">
+                        <li><i class='bx bx-check services__modal-icon'></i> Développement  from scratch  d'une application de gestion des tâches et documents confidentiels.</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Implémentation d’un système d’ authentification JWT  pour la sécurisation des accès.</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Développement backend en  Node.js, Express, API Restful .</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Développement frontend avec  Vue.js, Vuetify , en suivant les principes du  Design System .</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Gestion et sécurisation des fichiers avec  Amazon S3 , mise en place de  chiffrement .</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Participation aux sprints en  méthodologie Agile (Scrum) .</li>
+                    </ul>
+
+                    <p><b>Stack technique :</b> Vue.js, Vuetify, Node.js, Express, MongoDB, JWT, AWS S3, GitHub Actions, Docker, Postman, Agile.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Expérience : Ministère de la Cohésion des Territoires -->
+        <div class="services__card mix pro">
+            <h3 class="services__title">Consultant Technique - Ministère de la Cohésion</h3>
+            <span class="services_subbtitle">2020 - 2021</span>
+
+            <span class="services__button">
+                Voir plus <i class='bx bx-right-arrow-alt services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Consultant Technique - Ministère de la Cohésion</h3>
+                    <p class="services__modal-description">2020 - 2021</p>
+
+                    <ul class="services__modal-list">
+                        <li><i class='bx bx-check services__modal-icon'></i> Correction et adaptation des  tickets GLPI (J2EE, Mantis)  pour assurer la continuité des services.</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Gestion et  optimisation des bases PostgreSQL  pour améliorer la vitesse d’exécution des requêtes.</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Refonte et migration du  système Synergie , intégration de nouvelles fonctionnalités.</li>
+                    </ul>
+
+                    <p><b>Stack technique :</b> PostgreSQL, J2EE, Tomcat, Mantis, Git, Méthodologie Agile.</p>
+                </div>
+            </div>
+        </div>
+
+                 <!-- Expérience : Ministère de l'Éducation - GNFA -->
+        <div class="services__card mix pro">
+            <h3 class="services__title">Consultant Technique - Ministère de l'Éducation</h3>
+            <span class="services_subbtitle">2019 - 2020</span>
+
+            <span class="services__button">
+                Voir plus <i class='bx bx-right-arrow-alt services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Consultant Technique - Ministère de l'Éducation</h3>
+                    <p class="services__modal-description">2019 - 2020</p>
+
+                    <ul class="services__modal-list">
+                        <li><i class='bx bx-check services__modal-icon'></i> Développement d’interfaces pour un  ERP SaaS .</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Migration et transformation de  données MySQL .</li>
+                        <li><i class='bx bx-check services__modal-icon'></i> Tests et validations des nouvelles fonctionnalités.</li>
+                    </ul>
+
+                    <p><b>Stack technique :</b> C#, .NET, MySQL, ERP SaaS, Trello, Visual Studio.</p>
+                </div>
+            </div>
+        </div>
+        
+
+                <!-- Expérience : Ministère de l'Éducation - Mission OPER@ -->
+                <div class="services__card mix pro">
+                    <h3 class="services__title">Développeur - Ministère de l'Éducation (Mission OPER@)</h3>
+                    <span class="services_subbtitle">2017 - 2019</span>
+        
+                    <span class="services__button">
+                        Voir plus <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+        
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+        
+                            <h3 class="services__modal-title">Développeur - Ministère de l'Éducation (Mission OPER@)</h3>
+                            <p class="services__modal-description">2017 - 2019</p>
+        
+                            <ul class="services__modal-list">
+                                <li><i class='bx bx-check services__modal-icon'></i> Participation à la  refonte et migration  du système de paie des  Établissements Publics Locaux d’Enseignement (EPLE) .</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Conception et développement des interfaces utilisateur pour la gestion de la paie.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Automatisation des tâches administratives via la création de  macros Excel avancées .</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Rédaction du  cahier de recette  et exécution de  tests unitaires et fonctionnels .</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Analyse et correction des anomalies détectées lors des phases de tests.</li>
+                            </ul>
+        
+                            <p><b>Stack technique :</b> HRAccess, MySQL, Design Center, Excel VBA, HTML/CSS, Pack Office, Visual Studio.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- FORMATIONS -->
+                <div class="services__card mix formations">
+                    <h3 class="services__title">Master Management Développeur Fullstack</h3>
+                    <span class="services_subbtitle">EFREI Paris | 2022 - 2024</span>
+                </div>
+        
+                <div class="services__card mix formations">
+                    <h3 class="services__title">Bachelor DCGP (Développement Conception Global Programming)</h3>
+                    <span class="services_subbtitle">EFREI Paris | 2020 - 2022</span>
+                </div>
+        
+                <div class="services__card mix formations">
+                    <h3 class="services__title">BTS SIO (SLAM) - Développement Logiciel</h3>
+                    <span class="services_subbtitle">CFA UTEC | 2019 - 2021</span>
+                </div>
+        
+            </div>
+        </section>
+        
+
+        <section class="work section" id="work">
+            <span class="section__subtitle">Mes projets</span>
+            <h2 class="section__title">Mon Portfolio</h2>
+        
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">Tous</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".backend">Backend</span>
+                <span class="work__item" data-filter=".cloud">Cloud & DevOps</span>
+                <span class="work__item" data-filter=".prototype">Prototype Figma</span>
+            </div>
+        
+            <div class="work__container container grid">
+        
+                <!-- Projet : Gestion des tâches et documents confidentiels -->
+                <div class="work__card mix web">
+                    <img src="image/image1.jpg" alt="" class="work__img">
+                    <h3 class="work__title">Gestion des tâches et documents confidentiels</h3>
+                    <span class="work__button-modal">Voir plus <i class='bx bx-right-arrow-alt services__icon'></i></span>
+                    <div class="work__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <h3 class="services__modal-title">Gestion des tâches et documents confidentiels</h3>
+                            <p class="services__modal-description">
+                                Développement d’une application de gestion des tâches et stockage sécurisé des documents pour l'onboarding des salariés.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li><i class='bx bx-check services__modal-icon'></i> Stack : Vue.js, Node.js, MongoDB, AWS S3.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Sécurisation des documents sensibles via AWS S3.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Développement en méthode Agile.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Projet : Site de candidature automatisée -->
+                <div class="work__card mix web">
+                    <img src="image/image2.jpeg" alt="" class="work__img">
+                    <h3 class="work__title">Automatisation de candidatures</h3>
+                    <span class="work__button-modal">Voir plus <i class='bx bx-right-arrow-alt services__icon'></i></span>
+                    <div class="work__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <h3 class="services__modal-title">Automatisation de candidatures</h3>
+                            <p class="services__modal-description">
+                                Développement d’un site permettant de postuler automatiquement aux offres d’emploi sur Indeed, LinkedIn, Hellowork et Welcome to the Jungle.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li><i class='bx bx-check services__modal-icon'></i> Stack : Vue.js, Node.js, MongoDB.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Intégration du CV et gestion des candidatures.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Automatisation des candidatures avec Puppeteer.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Projet : POC Spring Boot + MongoDB -->
+                <div class="work__card mix backend">
+                    <img src="image/image3.jpeg" alt="" class="work__img">
+                    <h3 class="work__title">POC Spring Boot + MongoDB</h3>
+                    <span class="work__button-modal">Voir plus <i class='bx bx-right-arrow-alt services__icon'></i></span>
+                    <div class="work__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <h3 class="services__modal-title">POC Spring Boot + MongoDB</h3>
+                            <p class="services__modal-description">
+                                Création d’un Proof of Concept (POC) pour démontrer l’implémentation d’une API CRUD avec Spring Boot et MongoDB.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li><i class='bx bx-check services__modal-icon'></i> Stack : Java 21, Spring Boot, MongoDB.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Implémentation d’une API RESTful avec CRUD.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Tests API avec Postman et validation des données.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Projet : Prototype UI/UX Figma -->
+                <div class="work__card mix prototype">
+                    <img src="image/image4.jpeg" alt="" class="work__img">
+                    <h3 class="work__title">Prototype UI/UX Figma</h3>
+                    <span class="work__button-modal">Voir plus <i class='bx bx-right-arrow-alt services__icon'></i></span>
+                    <div class="work__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <h3 class="services__modal-title">Prototype UI/UX Figma</h3>
+                            <p class="services__modal-description">
+                                Création d'un prototype interactif en Figma pour un projet d’application web.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li><i class='bx bx-check services__modal-icon'></i> Wireframing et design UI/UX.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Animation et navigation entre les écrans.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Présentation du projet aux parties prenantes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Projet : Déploiement Cloud AWS -->
+                <div class="work__card mix cloud">
+                    <img src="image/image6.jpeg" alt="" class="work__img">
+                    <h3 class="work__title">Déploiement Cloud AWS</h3>
+                    <span class="work__button-modal">Voir plus <i class='bx bx-right-arrow-alt services__icon'></i></span>
+                    <div class="work__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <h3 class="services__modal-title">Déploiement Cloud AWS</h3>
+                            <p class="services__modal-description">
+                                Mise en place d’une infrastructure Cloud scalable sur AWS en utilisant Terraform et Kubernetes.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li><i class='bx bx-check services__modal-icon'></i> Stack : AWS, Terraform, Kubernetes.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Déploiement d’un cluster EKS pour exécuter des microservices.</li>
+                                <li><i class='bx bx-check services__modal-icon'></i> Automatisation du CI/CD avec ArgoCD.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        
+
+
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contactez Moi</h2>
+
+            <div class="contact__container container grid">
+
+                <div class="contact__content">
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data"></span>
+
+                            <a href="mailto:melanie.bourger@brest-opencampus.com" target="_blank" class="contact__button">Un mail par ici<i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data"></span>
+
+                            <a href="https://api.whatsapp.com/send?phone=330760963660&amp;text=Hello" target="_blank" class="contact__button">Ou un SMS par là <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Un petit message pour en savoir plus ?</h3>
+
+                    <form id="form2" method="post" action="https://www.melaniedev.com/form.php" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="nomform" class="contact__form-tag">Nom</label>
+                            <input name="nom" id="nomform" type="text" placeholder='Votre nom' class="contact__form-input" required>
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="prenomform" class="contact__form-tag">Mail</label>
+                            <input name="mail" type="email" placeholder="Votre mail"  class="contact__form-input" id="prenomform" required>
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="textarea1" class="contact__form-tag">Message</label>
+                            <textarea name="commentaire" id="textarea1" cols="30" rows="10" placeholder="Votre message" class="contact__form-input" required></textarea>
+                        </div>
+
+                        <input type="submit" class="button form-control submit" value="Envoyer">
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">by Reda MESSI.</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">A propos</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Portfolio</a>
+                </li>
+            </ul>
+
+            
+
+            <span class="footer__copy">
+                &#169; RedaMESSI.com. All rights reserved
+            </span>
+        </div>
+    </footer>
+
+    <script src="scrollreveal.min.js"></script>
+
+    <script src="mixitup.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+<script>
+    // Récupérer le bouton de changement de thème
+    const themeButton = document.getElementById("theme-button");
+    const body = document.body;
+
+    // Vérifier le mode enregistré
+    if (localStorage.getItem("theme") === "light") {
+        body.classList.add("light-theme");
+    }
+
+    // Changer de thème en cliquant sur le bouton
+    themeButton.addEventListener("click", () => {
+        body.classList.toggle("light-theme");
+
+        // Sauvegarder le choix
+        if (body.classList.contains("light-theme")) {
+            localStorage.setItem("theme", "light");
+        } else {
+            localStorage.setItem("theme", "dark");
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    
+    // ✅ Ajuste dynamiquement la hauteur de la section Home
+    function adjustHomeSection() {
+        const home = document.querySelector('.home');
+        if (window.innerWidth <= 768) {
+            home.style.minHeight = window.innerHeight + "px";
+        } else {
+            home.style.minHeight = "100vh";
+        }
+    }
+
+    // ✅ Corrige le background-image sur mobile
+    function fixBackgroundImage() {
+        const home = document.querySelector('.home');
+        if (window.innerWidth <= 768) {
+            home.style.backgroundImage = "url('image/home-mobile.jpg')";
+        } else {
+            home.style.backgroundImage = "url('image/home.jpg')";
+        }
+    }
+
+    // ✅ Ajuste la taille du texte en fonction de l'écran
+    function adjustTextSize() {
+        const title = document.querySelector('.home__title');
+        const subtitle = document.querySelector('.home__subtitle');
+
+        if (window.innerWidth <= 768) {
+            title.style.fontSize = "2.5rem";
+            subtitle.style.fontSize = "1.5rem";
+        } else {
+            title.style.fontSize = "3.5rem";
+            subtitle.style.fontSize = "2rem";
+        }
+    }
+
+    // ✅ Applique les ajustements au chargement et au redimensionnement
+    function applyMobileAdjustments() {
+        adjustHomeSection();
+        fixBackgroundImage();
+        adjustTextSize();
+    }
+
+    applyMobileAdjustments();
+    window.addEventListener("resize", applyMobileAdjustments);
+});
+</script>
+
+</html>
