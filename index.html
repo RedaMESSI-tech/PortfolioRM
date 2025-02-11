@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from www.melaniedev.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Feb 2025 16:19:16 GMT -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -667,16 +666,25 @@
                             <h3 class="contact__card-title">Email</h3>
                             <span class="contact__card-data"></span>
 
-                            <a href="mailto:melanie.bourger@brest-opencampus.com" target="_blank" class="contact__button">Un mail par ici<i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
-                        </div>
+                            <a href="https://forms.gle/TON-LIEN-GOOGLE-FORM" target="_blank" class="contact__button">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfb0E-UkPb7yGaeX_uo1p_ukQst4fQ4ePBL3q5-HMP3YVTSmg/viewform" 
+                                target="_blank" 
+                                class="contact__button">
+                                 Envoyer un message <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                             </a>
+                             
+                            
+                            </div>
 
                         <div class="contact__card">
                             <i class='bx bxl-whatsapp contact__card-icon'></i>
                             <h3 class="contact__card-title">Whatsapp</h3>
                             <span class="contact__card-data"></span>
 
-                            <a href="https://api.whatsapp.com/send?phone=330760963660&amp;text=Hello" target="_blank" class="contact__button">Ou un SMS par là <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
-                        </div>
+                            <a href="https://wa.me/33766723049" target="_blank" class="contact__button">
+                                Envoyer un message sur WhatsApp <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                            </div>
 
                     </div>
                 </div>
@@ -684,25 +692,26 @@
                 <div class="contact__content">
                     <h3 class="contact__title">Un petit message pour en savoir plus ?</h3>
 
-                    <form action="mailto:messi-reda@outlook.com" method="post" enctype="text/plain">
+                    <form action="https://formspree.io/f/xvgzbkrl" method="POST">
                         <div class="contact__form-div">
                             <label for="nomform" class="contact__form-tag">Nom</label>
-                            <input name="nom" id="nomform" type="text" placeholder='Votre nom' class="contact__form-input" required>
+                            <input name="nom" id="nomform" type="text" placeholder="Votre nom" class="contact__form-input" required>
                         </div>
                     
                         <div class="contact__form-div">
-                            <label for="prenomform" class="contact__form-tag">Mail</label>
-                            <input name="mail" type="email" placeholder="Votre mail"  class="contact__form-input" id="prenomform" required>
+                            <label for="emailform" class="contact__form-tag">Email</label>
+                            <input name="email" type="email" placeholder="Votre email" class="contact__form-input" id="emailform" required>
                         </div>
                     
                         <div class="contact__form-div contact__form-area">
-                            <label for="textarea1" class="contact__form-tag">Message</label>
-                            <textarea name="commentaire" id="textarea1" cols="30" rows="10" placeholder="Votre message" class="contact__form-input" required></textarea>
+                            <label for="messageform" class="contact__form-tag">Message</label>
+                            <textarea name="message" id="messageform" cols="30" rows="5" placeholder="Votre message" class="contact__form-input" required></textarea>
                         </div>
                     
-                        <input type="submit" class="button form-control submit" value="Envoyer">
+                        <button type="submit" class="button form-control submit">Envoyer</button>
                     </form>
-                    
+                    <p id="confirmation-message" style="display:none; color: green;">Votre message a bien été envoyé !</p>
+                                        
                 </div>
 
             </div>
@@ -783,6 +792,31 @@
             home.style.backgroundImage = "url('image/home.jpg')";
         }
     }
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
+    var form = event.target;
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById("confirmation-message").style.display = "block";
+            document.getElementById("error-message").style.display = "none";
+            form.reset(); // Réinitialise le formulaire après envoi
+        } else {
+            document.getElementById("error-message").style.display = "block";
+        }
+    }).catch(error => {
+        document.getElementById("error-message").style.display = "block";
+    });
+});
+
 
     // ✅ Ajuste la taille du texte en fonction de l'écran
     function adjustTextSize() {
