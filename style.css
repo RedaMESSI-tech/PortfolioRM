@@ -454,7 +454,7 @@ body.light-theme .home__social-link:hover {
 .skills__box{
     display: flex;
     justify-content: center;
-    column-gap: 2.5rem;
+    column-gap: 3.5rem;
 }
 
 .skills__group{
@@ -1271,4 +1271,40 @@ body.modal-open {
     }
 
     
+}
+
+/* ✅ Centrage des compétences Backend et Cloud & DevOps sur mobile */
+@media screen and (max-width: 768px) {
+    .skills__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .skills_data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .skills__icon {
+        margin: 0 auto; /* Centre l'icône */
+    }
+
+    .skills__title {
+        text-align: center;
+        width: 100%;
+    }
 }
