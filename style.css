@@ -671,7 +671,6 @@ body.modal-open {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: .75rem;
     margin-bottom: 2rem;
 }
 
@@ -1180,6 +1179,7 @@ body.modal-open {
     color: white;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
+    width: 50%;
 }
 
 
