@@ -290,6 +290,7 @@ body.light-theme{
     align-items: center; /* Aligne bien horizontalement */
     gap: 1rem; /* Ajoute un espace uniforme entre les boutons */
     width: 100%; /* S'assure qu'ils prennent bien la largeur */
+    margin-top: 20%;
 
 }
 
@@ -1222,7 +1223,7 @@ body.modal-open {
 @media screen and (max-width: 375px) {
     .home__buttons {
         width: 100%; /* Évite le dépassement */
-        gap: 0rem;
+        gap: 1rem;
         margin-top: -18%;
     }
 
@@ -1281,8 +1282,6 @@ body.modal-open {
         width: 100%;
         max-width: 500px; /* Évite un étirement excessif */
         margin: 0 auto; /* Centrage */
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
