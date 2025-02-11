@@ -188,20 +188,30 @@ body.light-theme{
     color: var(--first-color-alt);
 }
 
-.nav__menu{
-    position: fixed;
-    bottom: 1rem;
-    background-color: hsla(var(--second-hue), 32%, 16%, .8);
-    border-radius: 4rem;
-    padding: 1rem 2.25rem;
-    backdrop-filter: blur(10px);
-    transition: .4s;
-}
+
+    .nav__menu {
+        position: fixed;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: hsla(var(--second-hue), 32%, 16%, .8);
+        border-radius: 4rem;
+        padding: 1rem 2rem;
+        backdrop-filter: blur(10px);
+        transition: .4s;
+        width: fit-content; /* S'adapte au contenu */
+        max-width: 90vw; /* Empêche de déborder */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem; /* Espacement entre les icônes */
+    }
 
 .nav__list{
     display: flex;
+    justify-content: center;
     align-items: center;
-    list-style: none;
+    width: 100%; /* Prend toute la largeur */
     gap: 1.5rem;
 }
 
@@ -275,12 +285,11 @@ body.light-theme{
 
 .home__buttons{
     display: flex;
-    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne */
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    max-width: 90%;
-    margin-top: 10%;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les boutons */
+    align-items: center; /* Aligne bien horizontalement */
+    gap: 1rem; /* Ajoute un espace uniforme entre les boutons */
+    width: 100%; /* S'assure qu'ils prennent bien la largeur */
 
 }
 
@@ -357,9 +366,12 @@ body.light-theme .home__social-link:hover {
     display: inline-block;
     background-color: var(--first-color);
     color: var(--body-color);
-    padding: .75rem 1rem;
+    padding: 1rem 1.5rem; /* Uniformise la taille des boutons */
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    text-align: center;
+    width: 80%; /* Définit une largeur uniforme */
+    max-width: 250px; /* Empêche que les boutons soient trop larges */
     transition: .4s;
 }
 
@@ -472,9 +484,14 @@ body.light-theme .home__social-link:hover {
 }
 
 .services__container{
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustement dynamique */
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
-    padding-top: 1rem;
+    padding: 1rem;
+    max-width: 1200px; /* Empêche les cartes de trop s'étirer */
+    margin: 0 auto; /* Centrage horizontal */   
 }
 
 .services__card{
@@ -722,9 +739,13 @@ body.modal-open {
 }
 
 .contact__container{
-    row-gap: 3rem;
-    padding-bottom: 3rem;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Ajoute un espacement entre les éléments */
+    max-width: 1200px; /* Empêche qu'il s'étale trop */
+    margin: 0 auto; /* Centre horizontalement */
+    padding-bottom: 3rem;}
 
 .contact__title{
     text-align: center;
@@ -878,6 +899,15 @@ body.modal-open {
 }
 
 
+/* 📌 Spécifique pour le mode desktop */
+@media screen and (min-width: 2024px) {
+    .nav__menu {
+        max-width: 500px; /* Empêche d’être trop large sur grand écran */
+        padding: 1rem 3rem;
+    }
+}
+
+
 @media screen and (max-width: 320px){
     .nav__menu{
         padding: 1rem 1.5rem;
@@ -925,9 +955,6 @@ body.modal-open {
 @media screen and (min-width: 576px){
     .nav__menu{
         width: 328px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
     }
 
     .about__info{
@@ -978,8 +1005,9 @@ body.modal-open {
     }
 
     .contact__info{
-        grid-template-columns: 350px;
-        justify-content: center;
+        flex: 1; /* Permet aux éléments de prendre chacun 50% */
+        max-width: 500px; /* Empêche un étalement excessif */
+        text-align: center; /* Centre les éléments internes */
     }
 
     .contact__form{
@@ -1191,7 +1219,17 @@ body.modal-open {
     backdrop-filter: blur(5px);
 }
 
+/* Correction spécifique pour iPhone SE */
+@media screen and (max-width: 375px) {
+    .home__buttons {
+        width: 100%; /* Évite le dépassement */
+    }
 
+    .button {
+        width: 100%; /* S'assure que les deux boutons sont égaux */
+        max-width: 220px; /* Ajustement pour petits écrans */
+    }
+}
 
 /* 📱 Adaptation mobile */
 @media screen and (max-width: 768px) {
@@ -1199,8 +1237,8 @@ body.modal-open {
         position: static; /* Supprime la position absolue */
         flex-direction: row; /* Aligne horizontalement */
         justify-content: center;
-        margin-top: -63%;
-        margin-bottom: 80%;
+        margin-top: 23%;
+        margin-bottom: -11%;
     }
 }
 
@@ -1232,4 +1270,6 @@ body.modal-open {
     100% {
         text-shadow: 0 0 5px #ff5733, 0 0 10px #ff7844, 0 0 20px #ff5733;
     }
+
+    
 }
