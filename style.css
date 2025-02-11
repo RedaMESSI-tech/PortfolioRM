@@ -1222,6 +1222,8 @@ body.modal-open {
 @media screen and (max-width: 375px) {
     .home__buttons {
         width: 100%; /* Évite le dépassement */
+        gap: 0rem;
+        margin-top: -18%;
     }
 
     .button {
@@ -1272,4 +1274,74 @@ body.modal-open {
 
     
 }
+/* ✅ Centrage parfait des cartes et images */
+@media screen and (max-width: 768px) {
+    /* Centrage du conteneur principal */
+    .container {
+        width: 100%;
+        max-width: 500px; /* Évite un étirement excessif */
+        margin: 0 auto; /* Centrage */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    /* Centrage des cartes */
+    .skills__content,
+    .services__card,
+    .work__card,
+    .contact__card,
+    .about__box {
+        width: 90%; /* Ajustement de la largeur */
+        max-width: 350px; /* Empêche l'étalement */
+        margin: 0 auto; /* Centrage */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Centrage des cartes dans un layout flex */
+    .services__container,
+    .skills__container,
+    .work__container,
+    .contact__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centrage des cartes */
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* ✅ Correction des images */
+    .about__img,
+    .home__img,
+    .work__img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; /* Garde les proportions */
+    }
+
+    /* Correction spécifique pour la bannière */
+    .home__handle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Centrage des icônes et ajustement de l'espacement */
+    .skills__icon,
+    .services__modal-icon {
+        display: block;
+        margin: 0 auto 5px auto;
+    }
+}
